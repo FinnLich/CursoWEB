@@ -1,0 +1,117 @@
+body{
+    background-color: #333;
+}
+
+body::before {
+   content: "✦\A ✦\A ✦";
+  position: fixed;
+  top: 20%;
+  left: 20px;
+  color: rgb(0, 225, 255);
+  font-size: 28px;
+  opacity: 0.6;
+}
+
+body::after {
+   content: "✦\A ✦\A ✦";
+  position: fixed;
+  bottom: 20%;
+  right: 20px;
+  color: rgb(0, 225, 255);
+  font-size: 28px;
+  opacity: 0.6;
+}
+
+h1{
+    color: aqua;
+    border: solid black;
+    border-radius: 100px;
+    padding: 20px;
+    background-color: blue;
+}
+
+p{
+    text-align: center;
+}
+
+.area-hover {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 30px auto;
+}
+
+.texto-hover {
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.imagem-escondida {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: 0.4s;
+}
+
+.icone {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 100px auto;
+    transition: 0.4s;
+}
+
+
+.area-hover:hover .imagem-escondida {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.area-hover:hover .icone {
+    opacity: 0;
+}
+
+.foto{
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    width: 600px;
+    border: solid 5px;
+    border-radius: 25px;
+}
+
+table{
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+
+}
+
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.topicos ul {
+  margin-top: 10px;
+  line-height: 1.8;
+  border: 2px solid blue;
+  border-radius: 25px;
+  background-color: aliceblue;
+}
+
+.titulo{
+    width: 400px;
+}

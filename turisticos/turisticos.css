@@ -1,0 +1,99 @@
+a{
+    color: red;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+a:hover{
+    color:black;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-family:sans-serif;
+    border: 5px solid;
+    border-radius: 50px;
+    display: inline;
+    padding: 5px;
+}
+
+img{
+    width: 500px;
+    height: auto;
+    border: 10px;
+    border-radius: 50px;
+}
+
+body{
+background-image:url(https://i.pinimg.com/originals/0d/66/d5/0d66d535b703213826a7a14fa14876d9.gif);
+font-family:sans-serif;
+}
+
+.container{
+display:flex;
+flex-wrap:wrap;
+gap: 150px;
+justify-content:center;
+}
+
+.card{
+width:250px;
+height:350px;
+position:relative;
+border-radius:15px;
+overflow:hidden;
+text-decoration:none;
+display:block;
+color:white;
+}
+
+.card-front{
+display:flex;
+justify-content:center;
+align-items:center;
+width:80%;
+height:80%;
+background:#000000;
+border: 10px solid rgb(255, 255, 255);
+border-radius: 50%;
+color:white;
+font-size:22px;
+text-decoration:none;
+}
+
+.card-back{
+position:absolute;
+top:0;
+left:0;
+width:80%;
+height:80%;
+background:#000000;
+border: 10px solid white;
+border-radius: 50px;
+color:white;
+padding:10px;
+opacity:0;
+transition:0.4s;
+}
+
+.card:hover .card-back{
+opacity:1;
+}
+
+.card-back img{
+width:200px;
+display:block;
+margin:auto;
+margin-bottom:10px;
+}
+
+.card-back ul{
+font-size:12px;
+padding-left:15px;
+}
+
+.card-back h3{
+    font-size: 20px;
+    text-align: justify;
+}

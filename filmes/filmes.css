@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.fundo{
+    background: rgba(20, 20, 20, 0.753);
+    position: fixed;
+    width: 99%;
+    height: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.janela{
+    width: 1500px;
+    height: 800px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.janela2{
+    width: 1000px;
+    height: 800px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+h1{
+    color: whitesmoke;
+    background-color: black;
+    font-family: "Lora", serif;
+}
+
+.genero{
+    color: red;
+    border: 10px;
+    border-radius: 50px;
+}
+
+.titulo{
+    background: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.icones{
+    display: flex;
+    gap: 20px;
+}
+
+.item{
+    position: relative;
+    display: inline-block;
+}
+
+img{
+  width: 50px;
+  transition:0.3s;
+}
+
+.item:hover img{
+    transform: scale(1.1);
+    filter: brightness(1.3);
+}
+
+.item span{
+  position:absolute;
+  bottom:-25px;
+  left:50%;
+  transform:translateX(-50%);
+  background:black;
+  color:white;
+  padding:4px 8px;
+  font-size:12px;
+  border-radius:4px;
+  opacity:0;
+  transition:0.3s;
+}
+
+.item:hover span{
+  opacity:1;
+}
+
+.cartaz{
+    width: 400px;
+    border: solid 10px;
+    border-radius: 50px;
+    color:yellow;
+}
+
+.filmes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+}
+
+.dados li{
+    background: rgba(92, 29, 0, 0.788);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.voltar{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 50px;
+}

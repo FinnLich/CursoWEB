@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    top: 0;
+
+}
+
+p{
+    text-align: center;
+}
+
+h1{
+    color: #1B8C47;
+}
+
+h2{
+    text-align: center;
+}
+
+img{
+    border-radius: 14px;
+    border: 1px solid #eee;
+}
+
+.africa{
+    background-color: #FCD04C;
+}
+
+.sul{
+    background-color: #1B8C47;
+}
+
+.norte{
+    background-color: #96C549;
+}
+
+.europa{
+    background-color: #35A4DE;
+}
+
+.asia{
+    background-color: #FC9417;
+}
+
+.oceania{
+    background-color: #E02B35;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th{
+    text-align: center;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+    
+}
+
+tr:hover {background-color: coral;}
+
+.tabela{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
