@@ -2,162 +2,137 @@
     margin: 0;
 }
 
-/* Fundo */
 body {
     margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza tudo */
+}
+
+body {
+    margin: 0;
     min-height: 100vh;
     font-family: Arial, sans-serif;
 
-    /* Gradiente suave */
-    background: linear-gradient(135deg, #080808, #8412a7, #2e023b);
-
-    overflow-x: hidden;
-    position: relative;
+    background: linear-gradient(135deg, #0f2027, #2ecc71, #a8e063, #00ffcc);
+    background-size: 400% 400%;
+    animation: agua 12s ease infinite;
 }
 
+/* camada de efeito separada */
+body::after {
+    content: "";
+    position: fixed; /* aqui está o segredo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-/* BOLHAS */
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 60%);
+    animation: onda 8s linear infinite;
 
-.bolha {
-    position: absolute;
-    bottom: -150px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(5px);
-    animation: subir 30s linear infinite;
+    pointer-events: none; /* não bloqueia clique nem scroll */
 }
 
-/* tamanhos e posições diferentes */
-.b1 {
-    width: 80px;
-    height: 80px;
-    left: 10%;
-    animation-duration: 12s;
+@keyframes agua {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-.b2 {
-    width: 120px;
-    height: 120px;
-    left: 30%;
-    animation-duration: 18s;
+@keyframes onda {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
-
-.b3 {
-    width: 60px;
-    height: 60px;
-    left: 50%;
-    animation-duration: 10s;
-}
-
-.b4 {
-    width: 150px;
-    height: 150px;
-    left: 70%;
-    animation-duration: 20s;
-}
-
-.b5 {
-    width: 90px;
-    height: 90px;
-    left: 85%;
-    animation-duration: 14s;
-}
-
-@keyframes subir {
-    0% {
-        transform: translateY(0);
-        opacity: 0;
-    }
-    20% {
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-120vh);
-        opacity: 0;
-    }
-}
-
 
 /* CARDS */
-.card{
-display:flex;
-flex-wrap:wrap;
-gap: 150px;
-justify-content:center;
+.card {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 50px auto;
+
+    border: 10px solid rgb(255, 238, 0); /* amarelo */
+    transition: border-color 0.4s ease;
 }
 
-.card{
-width:500px;
-height:300px;
-position:relative;
-border-radius:15px;
-overflow:hidden;
-text-decoration:none;
-display:block;
-color:rgb(255, 255, 255);
-margin: 0 auto;
+.card:hover {
+    border-color: rgb(60, 255, 0); /* verde */
 }
 
+/* frente do card */
 .card-front{
-display:flex;
-justify-content:center;
-align-items:center;
-width:80%;
-height:80%;
-background:#000000;
-border: 10px solid rgb(255, 0, 0);
-border-radius: 50px;
-color:white;
-font-size:22px;
-text-decoration:none;
-padding:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100%;
+    background:#000;
+    color:white;
+    font-size:22px;
 }
 
-.card-back{
-position:absolute;
-top:0;
-left:0;
-width:80%;
-height:80%;
-background:#000000;
-border: 10px solid rgb(0, 183, 255);
-border-radius: 50px;
-color:white;
-padding:10px;
-opacity:0;
-transition:0.4s;
-overflow-x: auto;
+/* parte de trás */
+.card-back {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    background:#ffffff;
+
+    color:#000;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    /* remove o padding ou diminui */
+    padding: 0;
+    opacity:0;
+    transition:0.4s;
+    overflow-y: auto;
 }
 
+/* hover */
 .card:hover .card-back{
-opacity:1;
+    opacity:1;
 }
 
-.card-back img{
-width:200px;
-display:block;
-margin:auto;
-margin-bottom:10px;
-}
-
-.card-back ul{
-font-size:12px;
-padding-left:15px;
-}
-
+/* textos */
 .card-back h3{
-    font-size: 20px;
-    text-align: justify;
+    font-size:18px;
+    margin-bottom:5px;
 }
 
+.card-back p{
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.card {
+    border: 8px solid rgb(255, 238, 0);
+    transition: border-color 0.5s ease, box-shadow 0.5s ease;
+    
+}
+
+.card:hover {
+    border: 10px solid rgb(60, 255, 0);
+    box-shadow: 0 0 20px rgb(60, 255, 0);
+}
 
 
 /*TABELA BRABA DO RAUÃ */
 .tabela {
-  width: 100%;
+  width: 1000px;
   border-collapse: collapse;
   text-align: center;
+  margin: 0 auto;
 }
 
 .tabela th,
@@ -169,15 +144,16 @@ padding-left:15px;
 .tabela th {
   background: #222;
   color: white;
+  border-radius: 50px;
 }
 
-tr:hover {background-color: rgb(0, 255, 242);}
+tr:hover {background-color: rgb(251, 255, 0);}
 
-/*RODAPÉ BRABO DO RAUÃ */
 .rodape {
   background: #111;
   color: #fff;
   padding-top: 40px;
+  margin-top: 50px;
 }
 
 .rodape-container {
@@ -191,7 +167,7 @@ tr:hover {background-color: rgb(0, 255, 242);}
 .rodape-col h2,
 .rodape-col h3 {
   margin-bottom: 10px;
-  color: rgb(0, 247, 255);
+  color: rgb(255, 217, 0);
 }
 
 .rodape-col p {
@@ -215,7 +191,7 @@ tr:hover {background-color: rgb(0, 255, 242);}
 }
 
 .rodape-col a:hover {
-  color: rgb(0, 255, 242);
+  color: rgb(255, 230, 0);
 }
 
 .rodape-copy {
