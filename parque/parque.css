@@ -1,0 +1,338 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+
+    /* Gradiente estilo código + galáxia */
+    background: linear-gradient(
+        -45deg,
+        #0f2027,
+        #203a43,
+        #2c5364,
+        #1a1a2e,
+        #16213e,
+        #0f3460
+    );
+
+    background-size: 400% 400%;
+
+    animation: gradientBG 12s ease infinite;
+}
+
+/* Animação */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 100%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 0%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        rgba(0,255,255,0.05) 0px,
+        rgba(0,255,255,0.05) 1px,
+        transparent 1px,
+        transparent 3px
+    );
+    pointer-events: none;
+}
+
+/* estrelas */
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+
+    background-image:
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(#ff8c00 1px, transparent 1px),
+    radial-gradient(#ffffff 2px, transparent 2px);
+
+    background-size: 80px 80px, 120px 120px, 200px 200px;
+
+    animation: estrelas 60s linear infinite;
+    opacity: 0.6;
+}
+
+@keyframes estrelas {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-1000px);
+    }
+}
+
+/* neon */
+
+h1, h2, h3 {
+    text-align: center;
+    color: #ff8c00;
+
+    text-shadow:
+        0 0 5px #ff8c00,
+        0 0 10px #ff8c00,
+        0 0 20px #ff8c00,
+        0 0 40px #ff4500,
+        0 0 60px #ff4500;
+}
+
+h1 {
+    animation: neonPulse 2s infinite alternate;
+}
+
+@keyframes neonPulse {
+    from {
+        text-shadow:
+            0 0 5px #ff8c00,
+            0 0 10px #ff8c00;
+    }
+    to {
+        text-shadow:
+            0 0 20px #ff8c00,
+            0 0 40px #ff4500,
+            0 0 70px #ff4500;
+    }
+}
+
+/* cards */
+
+/* Container horizontal */
+.cards-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+
+    scroll-behavior: smooth;
+}
+
+/* Remove barra feia (opcional) */
+.cards-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.cards-container::-webkit-scrollbar-thumb {
+    background: #ff8c00;
+    border-radius: 10px;
+}
+
+/* Card */
+.card {
+    min-width: 250px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+
+    transition: 0.3s;
+    cursor: pointer;
+
+    /* efeito vidro */
+    backdrop-filter: blur(10px);
+}
+
+/* Imagem */
+.card img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+/* Hover (🔥 parte mais importante) */
+.card:hover {
+    transform: scale(1.08);
+    
+    box-shadow:
+        0 0 10px #ff8c00,
+        0 0 20px #ff8c00,
+        0 0 40px #ff4500;
+
+}
+
+/* Título com neon */
+.card h3 {
+    color: #ff4d00;
+    text-shadow:
+        0 0 5px #ff8c00,
+        0 0 10px #ff4500;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.banner{
+    width: 600px;
+    height: 400px;
+    border: solid 3px whitesmoke;
+    border-radius: 50px;
+    display: flex;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 500px;
+
+}
+
+/* esconder radios */
+.catalogo input {
+    display: none;
+}
+
+/* layout */
+.catalogo {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.carrossel {
+    display: flex;
+    gap: 20px;
+}
+
+/* cards */
+.card-catalogo {
+    width: 200px;
+    height: 260px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 20px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+
+    cursor: pointer;
+
+    opacity: 0.5;
+    transform: scale(0.8);
+    transition: 0.3s;
+
+    backdrop-filter: blur(10px);
+}
+
+/* destaque (🔥 principal) */
+#primeiro:checked ~ .carrossel .primeiro,
+#segundo:checked ~ .carrossel .segundo,
+#terceiro:checked ~ .carrossel .terceiro,
+#quarto:checked ~ .carrossel .quarto,
+#quinto:checked ~ .carrossel .quinto,
+#sexto:checked ~ .carrossel .sexto {
+    transform: scale(1.2);
+    opacity: 1;
+
+    box-shadow:
+        0 0 15px #ff8c00,
+        0 0 40px #ff4500;
+}
+
+/* textos */
+.card-catalogo h3 {
+    color: #ff8c00;
+    margin-bottom: 10px;
+}
+
+.card-catalogo p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-catalogo ul {
+    list-style: none;
+    font-size: 14px;
+}
+
+.rodape {
+    background: rgba(0, 0, 0, 0.8);
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 2px solid rgba(255,140,0,0.3);
+}
+
+/* container */
+.rodape-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 40px;
+}
+
+/* colunas */
+.coluna {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* títulos */
+.coluna h3 {
+    color: #ff8c00;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #ff8c00;
+}
+
+/* textos */
+.coluna p,
+.coluna li {
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* lista */
+.coluna ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* efeito hover */
+.coluna li:hover {
+    color: orange;
+    padding-left: 5px;
+    transition: 0.2s;
+}
+
+/* copy */
+.rodape-copy {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #222;
+    color: #888;
+    font-size: 13px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .rodape-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
