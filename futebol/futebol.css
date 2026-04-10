@@ -1,5 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.582);
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+
+  backdrop-filter: blur(8px);
+
+}
+
+nav{
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 20px; 
+
+
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a {
+  color: rgb(5, 5, 5);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+h1 {
+  margin-bottom: 10px;
+  background-color: rgba(41, 41, 41, 0.438);
+  display: inline-block;
+  padding: 10px;
+  border-radius: 100px;
+
+      text-shadow: 0 0 10px #ffffff, 
+                 0 0 20px #727272, 
+                 0 0 40px #000000;
+}
+
+h1:hover {
+    transform: scale(1.25);
+    transition: 0.3s;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+img{
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+  img:hover {
+    transform: scale(1.25);
+    transition: 0.3s;
+}
+
 .brasil {
+  width: 100%;
+  height: 714px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f7d800; 
+  border: solid yellow;
+  margin-top: 100px
+}
+
+.destaque-brasil{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: yellow;
+}
+
+.destaques-brasil{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: yellow; 
+}
+
+.alemanha {
+  width: 100%;
+  height: 714px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(19, 18, 18);
+  border: solid black;
+}
+
+.destaque-alemanha{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: black;
+}
+
+.destaques-alemanha{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black; 
+  color: white;
+}
+
+.alemanha-texto{
+  color: white;
+}
+
+.italia {
+  width: 100%;
+  height: 714px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  border: solid rgb(189, 189, 189);
+}
+
+.destaque-italia{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: rgb(189, 189, 189);
+}
+
+.destaques-italia{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(189, 189, 189);
+}
+
+.argentina {
+  width: 100%;  
+  height: 714px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(30, 253, 179);
+  border: solid rgb(2, 151, 151);;
+}
+
+.destaque-argentina{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: rgb(2, 151, 151);
+}
+
+.destaques-argentina{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(2, 151, 151); 
+}
+
+.uruguai   {
+  width: 100%;  
+  height: 714px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: goldenrod;
+  border: solid rgb(139, 119, 1);
+}
+
+.destaque-uruguai{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: rgb(139, 119, 1);
+}
+
+.destaques-uruguai{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(139, 119, 1); 
+}
+
+.franca   {
+  width: 100%;  
+  height: 714px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(27, 88, 255);
+  border: solid rgb(0, 52, 121);;
+}
+
+.destaque-franca{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: rgb(0, 52, 121);
+}
+
+.destaques-franca{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(0, 52, 121); 
+}
+
+.inglaterra  {
+  width: 100%;  
+  height: 714px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orangered;
+  border: solid rgb(158, 42, 0); ;
+}
+
+.destaque-inglaterra{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: rgb(158, 42, 0); 
+}
+
+.destaques-inglaterra{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(158, 42, 0); 
+}
+
+.espanha   {
+  width: 100%;  
+  height: 714px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  border: solid rgb(122, 0, 0); ;
+}
+
+.destaque-espanha{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: rgb(122, 0, 0); 
+}
+
+.destaques-espanha{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(122, 0, 0); 
 }
