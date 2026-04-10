@@ -3,6 +3,18 @@
   padding: 0;
 }
 
+/* Esconde scrollbar no Chrome, Edge e Safari */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Mantém o scroll funcionando */
+html, body {
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE e Edge antigo */
+}
+
 header {
   background: rgba(255, 255, 255, 0.582);
   padding: 15px 0;
