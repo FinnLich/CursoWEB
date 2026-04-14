@@ -28,50 +28,10 @@ html, body {
   z-index: -3; /* IMPORTANTE */
 }
 
-/* 💨 GÁS (também fixo mas atrás) */
-.gas {
-  position: fixed;
-  inset: -20%;
-
-  background: radial-gradient(circle,
-    rgba(0, 255, 120, 0.18) 0%,
-    rgba(0, 255, 120, 0.08) 30%,
-    transparent 70%
-  );
-
-  filter: blur(90px);
-  mix-blend-mode: screen;
-  opacity: 0.7;
-
-  z-index: -2; /* IMPORTANTE */
-}
-
-/* camadas */
-.gas1 { animation: drift1 18s infinite alternate ease-in-out; }
-.gas2 { opacity: 0.5; animation: drift2 25s infinite alternate ease-in-out; }
-.gas3 { opacity: 0.35; animation: drift3 30s infinite alternate ease-in-out; }
-
-/* movimento */
-@keyframes drift1 {
-  0% { transform: translate(-5%, -5%) scale(1); }
-  100% { transform: translate(8%, 6%) scale(1.2); }
-}
-
-@keyframes drift2 {
-  0% { transform: translate(6%, -4%) scale(1.1); }
-  100% { transform: translate(-8%, 10%) scale(1.4); }
-}
-
-@keyframes drift3 {
-  0% { transform: translate(-3%, 6%) scale(1); }
-  100% { transform: translate(10%, -8%) scale(1.6); }
-}
-
-
 .topo {
-  position: relative;
+  position: sticky;
   height: 550px;
-  overflow: hidden;
+
 }
 
 .video-bg {
@@ -87,7 +47,6 @@ html, body {
 .camada {
   position: relative;
   z-index: 1;
-  height: 100%;
 
   background: rgba(0, 0, 0, 0.4);
 
@@ -122,14 +81,13 @@ html, body {
 
 
 header {
-  background: rgba(29, 88, 34, 0.582);
+  background: rgba(68, 139, 74, 0.582);
   padding: 15px 0;
   position: fixed;
   top: 0;
   width: 100%;
   display: flex;
   justify-content: justify;
-  border: solid black;
   z-index: 1000;
 
   backdrop-filter: blur(8px);
@@ -176,4 +134,5 @@ nav a {
 nav a:hover {
   color: #3cff00;
 }
+
 
