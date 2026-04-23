@@ -187,10 +187,82 @@ body {
 
 .transicao{
   background: linear-gradient(to right, #0b3d2e, #14532d, #22c55e);
-  height: 50px;
+  height: 30px;
 }
 
 .transicao h2{
   text-align: center;
 }
 
+body {
+  background: #0a0a0a;
+  font-family: Arial, sans-serif;
+}
+
+.tabela-container {
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+/* LEGENDA */
+.legenda {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.legenda span {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* CORES */
+.awesome { background: #1db954; }   /* verde forte */
+.great { background: #2ecc71; }     /* verde */
+.good { background: #f1c40f; }      /* amarelo */
+.regular { background: #e67e22; }   /* laranja */
+.bad { background: #e74c3c; }       /* vermelho */
+
+/* TABELA */
+.tabela {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.linha {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* número da esquerda */
+.num {
+  width: 20px;
+  text-align: center;
+}
+
+/* episódio */
+.ep {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-weight: bold;
+  color: black;
+  transition: 0.3s;
+}
+
+/* HOVER (fica bonito demais) */
+.ep:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #5cff5c;
+}
