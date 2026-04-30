@@ -194,40 +194,63 @@ body {
   text-align: center;
 }
 
-body {
-  background: #0a0a0a;
-  font-family: Arial, sans-serif;
-}
-
 .tabela-container {
   width: 80%;
   margin: auto;
   color: white;
+  font-family: Arial, sans-serif;
 }
 
 h2 {
   margin-bottom: 15px;
 }
 
-/* LEGENDA */
 .legenda {
   display: flex;
-  gap: 10px;
-  margin-bottom: 15px;
+  gap: 20px;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  padding: 20px;
 }
 
-.legenda span {
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 12px;
+.item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
 }
 
-/* CORES */
-.awesome { background: #1db954; }   /* verde forte */
-.great { background: #2ecc71; }     /* verde */
-.good { background: #f1c40f; }      /* amarelo */
-.regular { background: #e67e22; }   /* laranja */
-.bad { background: #e74c3c; }       /* vermelho */
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* Cores */
+.awesome {
+  background: #146e41;
+}
+
+.great {
+  background: #22c55e;
+}
+
+.good {
+  background: #eab308;
+}
+
+.regular {
+  background: #f59e0b;
+}
+
+.bad {
+  background: #ef4444;
+}
+
+.garbage {
+  background: #a855f7;
+}
 
 /* TABELA */
 .tabela {
@@ -246,6 +269,20 @@ h2 {
 .num {
   width: 20px;
   text-align: center;
+}
+
+.temp, .linha {
+  display: grid;
+  grid-template-columns: 20px repeat(5, 50px);
+  gap: 1px;
+  margin-bottom: 1px;
+  align-items: center;
+}
+
+.temp span {
+  text-align: center;
+  font-weight: bold;
+  color: #ccc;
 }
 
 /* episódio */
