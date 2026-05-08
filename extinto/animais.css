@@ -1,0 +1,23 @@
+.arara{
+    border: solid 3px blue;
+}
+
+.lobo{
+    border: solid 3px orangered;
+}
+
+.gaviao{
+    border: solid 3px black;
+}
+
+.azul{
+    background-color: blue;
+}
+
+.laranja{
+    background-color: orangered;
+}
+
+.preto{
+    background-color: black;
+}
