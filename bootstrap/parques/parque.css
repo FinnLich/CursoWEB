@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(226, 253, 244);
+}
+
+.foto{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
