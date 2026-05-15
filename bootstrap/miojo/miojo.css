@@ -1,0 +1,14 @@
+.vermelho{
+    background-color: red;
+}
+
+.texto{
+    color: red;
+    font-size: 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.borda{
+    border: solid 5px white;
+    border-radius: 50%;
+}
