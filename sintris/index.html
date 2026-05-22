@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sintris | Trinity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container nav">
+      <div class="logo">
+        <span class="logo-small">SINTRIS</span>
+        <span class="logo-big">Trinity</span>
+      </div>
+
+      <nav>
+        <a href="#marca">Marca</a>
+        <a href="#produto">Produto</a>
+        <a href="#notas">Notas</a>
+        <a href="#precos">Preços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-texto">
+          <p class="tag">Perfume autoral • sofisticado • sustentável</p>
+          <h1>Sintris Trinity</h1>
+          <p class="subtitulo">
+            Um conceito de perfume com três fragrâncias em um único produto,
+            criadas para serem usadas sozinhas ou combinadas.
+          </p>
+
+          <div class="hero-botoes">
+            <a href="#produto" class="btn btn-cheio">Explorar produto</a>
+            <a href="#notas" class="btn btn-borda">Ver combinações</a>
+            <div class="opcoes-perfume">
+  <p class="opcoes-titulo">Escolha a versão</p>
+
+  <div class="opcoes">
+    <button class="botao-cor ativo" data-img="img/perfume-prata.png">
+      Trinity Silver
+    </button>
+
+    <button class="botao-cor" data-img="img/perfume-rosa.png">
+      Trinity Rosé
+    </button>
+  </div>
+</div>
+          </div>
+        </div>
+
+<div class="hero-imagem">
+  <div class="viewer-area">
+    <div class="viewer" id="viewer">
+      <div class="card-3d" id="card3d">
+        <div class="brilho brilho-1"></div>
+        <div class="brilho brilho-2"></div>
+        <div class="sombra"></div>
+
+        <img
+          src="img/perfume-prata.png"
+          alt="Perfume Sintris Trinity"
+          class="perfume-img"
+          id="perfumeImg"
+        >
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </section>
+
+    <section class="marca" id="marca">
+      <div class="container">
+        <div class="secao-titulo">
+          <p class="tag">A marca</p>
+          <h2>O que é a Sintris?</h2>
+        </div>
+
+        <div class="marca-box">
+          <p>
+            A Sintris é uma marca de perfume com foco em sustentabilidade,
+            criatividade e liberdade de combinação. A proposta é permitir que
+            cada pessoa explore notas diferentes, descubra novas sensações e
+            use o perfume como forma de expressão pessoal.
+          </p>
+
+          <div class="marca-cards">
+            <article class="mini-card">
+              <h3>Sustentável</h3>
+              <p>Conceito com material biodegradável e proposta mais consciente.</p>
+            </article>
+
+            <article class="mini-card">
+              <h3>Criativa</h3>
+              <p>Você não fica preso a uma única fragrância.</p>
+            </article>
+
+            <article class="mini-card">
+              <h3>Versátil</h3>
+              <p>Use cada fragrância separadamente ou crie sua própria combinação.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="produto" id="produto">
+      <div class="container produto-grid">
+        <div class="produto-imagem">
+          <img src="img/duo.png" alt="Versão colecionador do Sintris Trinity">
+        </div>
+
+        <div class="produto-texto">
+          <p class="tag">Produto principal</p>
+          <h2>3 fragrâncias em 1</h2>
+          <p>
+            O Trinity foi pensado para unir praticidade, segurança e inovação.
+            A embalagem trabalha com um conceito mais seguro e com o uso de PHA,
+            um plástico biodegradável.
+          </p>
+
+          <ul class="lista-check">
+            <li>Três fragrâncias diferentes no mesmo produto</li>
+            <li>Uso individual como perfumes próprios</li>
+            <li>Combinação entre fragrâncias para criar novos resultados</li>
+            <li>Experiência flexível para dia e noite</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="notas" id="notas">
+      <div class="container">
+        <div class="secao-titulo">
+          <p class="tag">Linha olfativa</p>
+          <h2>Combinações masculinas</h2>
+        </div>
+
+        <div class="cards-notas">
+          <article class="nota-card">
+            <h3>Fresh Core</h3>
+            <p class="vibe">Limpo, leve, ideal para o dia</p>
+            <span>Topo: bergamota, limão, hortelã</span>
+            <span>Coração: lavanda, alecrim</span>
+            <span>Base: almíscar branco, cedro leve</span>
+          </article>
+
+          <article class="nota-card">
+            <h3>Balance / Fusion</h3>
+            <p class="vibe">Elegante e versátil</p>
+            <span>Topo: maçã verde, gengibre</span>
+            <span>Coração: lavanda, cardamomo</span>
+            <span>Base: vetiver, madeira suave</span>
+          </article>
+
+          <article class="nota-card">
+            <h3>Deep Night</h3>
+            <p class="vibe">Marcante, noturno e intenso</p>
+            <span>Topo: pimenta preta, canela leve</span>
+            <span>Coração: âmbar, couro suave</span>
+            <span>Base: sândalo, patchouli, musk</span>
+          </article>
+        </div>
+
+        <div class="combinacoes">
+          <div class="combo-box">
+            <h4>Combinações sugeridas</h4>
+            <p><strong>Fresh + Balance</strong> — limpo e elegante</p>
+            <p><strong>Deep + Balance</strong> — quente e sofisticado</p>
+            <p><strong>Deep + Fresh</strong> — refrescante e marcante</p>
+            <p><strong>Deep + Fresh + Balance</strong> — assinatura completa</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="notas feminino">
+      <div class="container">
+        <div class="secao-titulo">
+          <p class="tag">Linha olfativa</p>
+          <h2>Combinações florais e sofisticadas</h2>
+        </div>
+
+        <div class="cards-notas">
+          <article class="nota-card">
+            <h3>Soft Bloom</h3>
+            <p class="vibe">Leve, delicada, para o dia</p>
+            <span>Topo: pera, bergamota, mandarina</span>
+            <span>Coração: peônia, flor de laranjeira</span>
+            <span>Base: almíscar branco, baunilha leve</span>
+          </article>
+
+          <article class="nota-card">
+            <h3>Velvet Touch</h3>
+            <p class="vibe">Elegante e equilibrada</p>
+            <span>Topo: framboesa, lichia</span>
+            <span>Coração: rosa, jasmim</span>
+            <span>Base: sândalo, musk</span>
+          </article>
+
+          <article class="nota-card">
+            <h3>Golden Night</h3>
+            <p class="vibe">Sensual, noturna, envolvente</p>
+            <span>Topo: ameixa, pimenta rosa</span>
+            <span>Coração: tuberosa, ylang-ylang</span>
+            <span>Base: baunilha, âmbar, patchouli</span>
+          </article>
+        </div>
+
+        <div class="combinacoes">
+          <div class="combo-box">
+            <h4>Combinações sugeridas</h4>
+            <p><strong>Soft + Velvet</strong> — delicado e sofisticado</p>
+            <p><strong>Golden + Bloom</strong> — leve com intensidade</p>
+            <p><strong>Night + Touch</strong> — floral sensual para a noite</p>
+            <p><strong>Golden + Velvet + Bloom</strong> — evolução completa</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="destaques" id="precos">
+      <div class="container">
+        <div class="secao-titulo">
+          <p class="tag">Posicionamento</p>
+          <h2>Por que o Trinity se destaca?</h2>
+        </div>
+
+        <div class="grid-destaques">
+          <article class="destaque-card">
+            <h3>Público-alvo</h3>
+            <p>
+              Jovens e adultos que buscam praticidade, criatividade, segurança
+              e uma opção moderna para o dia a dia.
+            </p>
+          </article>
+
+          <article class="destaque-card">
+            <h3>Diferencial</h3>
+            <p>
+              Em vez de um perfume fixo, o produto oferece liberdade para mudar,
+              combinar e adaptar a fragrância ao momento.
+            </p>
+          </article>
+
+          <article class="destaque-card">
+            <h3>Faixa de preço</h3>
+            <p>
+              Versão em lote: <strong>R$ 200</strong><br>
+              Versão colecionador: <strong>R$ 350</strong>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="versoes">
+      <div class="container">
+        <div class="secao-titulo">
+          <p class="tag">Versões</p>
+          <h2>Escolha sua experiência</h2>
+        </div>
+
+        <div class="grid-versoes">
+          <article class="versao-card destaque">
+            <img src="img/duo.png" alt="Versão colecionador">
+            <h3>Colecionador</h3>
+            <p>Acabamento premium, design de destaque e apresentação especial.</p>
+            <strong>R$ 350</strong>
+          </article>
+
+          <article class="versao-card">
+            <img src="img/lote.png" alt="Versão em lote">
+            <h3>Versão em lote</h3>
+            <p>Mais acessível, mantendo o conceito central do Trinity.</p>
+            <strong>R$ 200</strong>
+          </article>
+        </div>
+      </div>    
+    </section>
+
+    <section class="estatisticas">
+      <div class="container">
+        <div class="secao-titulo">
+          <p class="tag">Aceitação</p>
+          <h2>Reação do público</h2>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span>48%</span>
+            <p>preferiram a versão de frasco</p>
+          </div>
+
+          <div class="stat-card">
+            <span>32%</span>
+            <p>gostaram da versão em lote</p>
+          </div>
+
+          <div class="stat-card">
+            <span>16%</span>
+            <p>queriam novas versões</p>
+          </div>
+
+          <div class="stat-card">
+            <span>4%</span>
+            <p>não aprovaram o produto</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-box">
+        <p class="tag">Sintris Trinity</p>
+        <h2>Crie sua própria assinatura olfativa</h2>
+        <p>
+          Um perfume feito para quem quer mais liberdade, mais identidade
+          e uma experiência diferente em cada uso.
+        </p>
+        <a href="#contato" class="btn btn-cheio">Entrar em contato</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contato">
+    <div class="container rodape">
+      <div>
+        <h3>Sintris</h3>
+        <p>Perfume, criatividade e identidade.</p>
+      </div>
+
+      <div>
+        <p>Instagram: @sintris.co</p>
+        <p>E-mail: contato@sintris.com</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+  const viewer = document.getElementById("viewer");
+  const card3d = document.getElementById("card3d");
+  const perfumeImg = document.getElementById("perfumeImg");
+  const botoes = document.querySelectorAll(".botao-cor");
+
+  let isDragging = false;
+  let startX = 0;
+  let startY = 0;
+  let rotateX = 0;
+  let rotateY = 0;
+
+  function aplicarRotacao() {
+    card3d.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  }
+
+  viewer.addEventListener("mousedown", (e) => {
+    isDragging = true;
+    startX = e.clientX;
+    startY = e.clientY;
+  });
+
+  window.addEventListener("mouseup", () => {
+    isDragging = false;
+  });
+
+  window.addEventListener("mousemove", (e) => {
+    if (!isDragging) return;
+
+    const deltaX = e.clientX - startX;
+    const deltaY = e.clientY - startY;
+
+    rotateY += deltaX * 0.25;
+    rotateX -= deltaY * 0.25;
+
+    if (rotateX > 25) rotateX = 25;
+    if (rotateX < -25) rotateX = -25;
+    if (rotateY > 45) rotateY = 45;
+    if (rotateY < -45) rotateY = -45;
+
+    aplicarRotacao();
+
+    startX = e.clientX;
+    startY = e.clientY;
+  });
+
+  viewer.addEventListener("mouseleave", () => {
+    if (!isDragging) {
+      rotateX = 0;
+      rotateY = 0;
+      aplicarRotacao();
+    }
+  });
+
+  botoes.forEach((botao) => {
+    botao.addEventListener("click", () => {
+      botoes.forEach((b) => b.classList.remove("ativo"));
+      botao.classList.add("ativo");
+
+      perfumeImg.style.opacity = "0";
+
+      setTimeout(() => {
+        perfumeImg.src = botao.dataset.img;
+        perfumeImg.style.opacity = "1";
+      }, 180);
+    });
+  });
+</script>
+</body>
+</html>

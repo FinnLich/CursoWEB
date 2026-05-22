@@ -3,95 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="metro.css">
-    <title>Metrô</title>
+
+    <link rel="icon" type="image/png" href="_imagens/icon.png">
+    <title>FOOL Steampunk</title>
 </head>
 <body>
 
     <header>
+        <nav class="navbar navbar-expand-lg navbar-dark menu-steampunk">
+            <div class="container">
+                <a class="navbar-brand" href="#">FOOL Steampunk/</a>
+                <a class="navbar-brand" href="#">/Sistema metroviário</a>
 
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#historia">História</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#linhas">Linhas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#curiosidades">Curiosidades</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metrô Steampunk</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
 
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+                <div class="carousel-item active">
+                    <img src="_imagens/banner1.png" class="d-block w-100 banner" alt="Banner metrô steampunk 1">
+                    <div class="carousel-caption">
+                        <h1>O Futuro Movido a Vapor</h1>
+                        <p>Uma viagem subterrânea com engrenagens, cobre e tecnologia antiga.</p>
+                    </div>
+                </div>
 
+                <div class="carousel-item">
+                    <img src="_imagens/banner2.png" class="d-block w-100 banner" alt="Banner metrô steampunk 2">
+                    <div class="carousel-caption">
+                        <h1>Trilhos de Bronze</h1>
+                        <p>Estações inspiradas na era industrial e na fantasia steampunk.</p>
+                    </div>
+                </div>
 
+                <div class="carousel-item">
+                    <img src="_imagens/banner3.png" class="d-block w-100 banner" alt="Banner metrô steampunk 3">
+                    <div class="carousel-caption">
+                        <h1>Engrenagens Urbanas</h1>
+                        <p>O metrô como uma grande máquina viva no coração da cidade.</p>
+                    </div>
+                </div>
 
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
     </header>
 
     <main>
+        <section id="historia" class="container secao">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>A História do Metrô</h2>
+                    <p>
+                        O metrô representa velocidade, organização e modernidade. Em uma versão steampunk,
+                        ele se transforma em uma poderosa máquina subterrânea movida por vapor, engrenagens
+                        e mecanismos metálicos.
+                    </p>
+                    <p>
+                        As estações ganham aparência industrial, com tubos aparentes, relógios antigos,
+                        placas de bronze e luzes amareladas.
+                    </p>
+                </div>
 
+                <div class="col-md-6">
+                    <div class="caixa-destaque">
+                        <h3>Transporte Subterrâneo</h3>
+                        <p>
+                            Um sistema criado para conectar pessoas, bairros e histórias por meio de trilhos
+                            escondidos abaixo da cidade.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="linhas" class="secao escura">
+            <div class="container">
+                <h2 class="text-center">Linhas do Metrô</h2>
 
+                <img src="_imagens/mapa.png" alt="" class="container">
 
+                <h2 class="text-center mt-4">Linhas Fundadoras</h2>
 
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card card-steampunk">
+                            <div class="card-body">
+                                <h5 class="card-title">Linha Bronze</h5>
+                                <p class="card-text">
+                                  A Linha Bronze foi a primeira grande rota construída no Metrô Steampunk.
+                                  Ela surgiu quando os antigos engenheiros da cidade precisaram ligar as
+                                  oficinas centrais, os mercados mecânicos e os bairros industriais.
+                                </p>
+                                <p>
+                                  Seus trilhos foram feitos com ligas de bronze reforçado, escolhidas por
+                                  resistirem ao calor das caldeiras e ao peso das máquinas subterrâneas.
+                                  Por isso, a linha ficou conhecida como o coração mecânico da cidade.
+                                </p>
+                                <p>
+                                  Atualmente, a Linha Bronze é projetada para conectar as áreas centrais,
+                                  transportando trabalhadores, inventores, peças metálicas e pequenas
+                                  máquinas entre os principais pontos urbanos.
+                              </p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-md-4">
+                        <div class="card card-steampunk">
+                            <div class="card-body">
+                                <h5 class="card-title">Linha Vapor</h5>
+                                <p class="card-text">
+                                  A Linha Vapor nasceu nos túneis mais antigos da cidade, onde antes
+                                  passavam dutos de pressão e canais subterrâneos de energia térmica.
+                                  Com o crescimento do metrô, esses túneis foram adaptados para receber
+                                  trens movidos por sistemas de caldeiras.
+                                </p>
+                                <p>
+                                  Ela ficou famosa por seu visual antigo, com paredes escuras, lanternas
+                                  amareladas, fumaça constante e estações cercadas por canos e válvulas.
+                                  Muitos passageiros dizem que viajar por ela parece entrar em outra época.
+                                </p>
+                                <p>
+                                  Hoje, a Linha Vapor é projetada para atravessar regiões profundas e
+                                  antigas da cidade, funcionando como uma rota histórica e turística,
+                                  além de servir como ligação entre bairros subterrâneos e zonas industriais.
+                              </p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-md-4">
+                        <div class="card card-steampunk">
+                            <div class="card-body">
+                                <h5 class="card-title">Linha Cobre</h5>
+                                <p class="card-text">
+                                    A Linha Cobre foi criada durante a era das grandes invenções mecânicas.
+                                    Seu objetivo inicial era transportar energia, ferramentas e técnicos
+                                    entre laboratórios, fábricas de tubos e estações experimentais.
+                                  </p>
+                                  <p>
+                                    O cobre foi escolhido como símbolo dessa linha por representar condução,
+                                    tecnologia e precisão. Suas estações possuem muitos painéis, cabos,
+                                    tubos, relógios de pressão e mecanismos de controle espalhados pelas paredes.
+                                  </p>
+                                  <p>
+                                    Atualmente, a Linha Cobre é projetada para atender as áreas tecnológicas
+                                    do metrô, ligando centros de manutenção, oficinas de automação e setores
+                                    responsáveis pelo funcionamento das máquinas da cidade.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="curiosidades" class="container secao">
+    <h2 class="text-center">Curiosidades</h2>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <ul class="lista-steampunk">
+                <li>
+                    A <strong>Linha Bronze</strong> é considerada o coração do sistema, pois foi a primeira linha criada para ligar as oficinas centrais da cidade.
+                </li>
+
+                <li>
+                    A <strong>Linha Vapor</strong> passa pelos túneis mais antigos do metrô, onde ainda existem canos, válvulas e antigas caldeiras nas paredes.
+                </li>
+
+                <li>
+                    A <strong>Linha Cobre</strong> é famosa por atravessar um trecho construído por baixo da água, conhecido como <strong>Túnel Submerso das Engrenagens</strong>.
+                </li>
+
+                <li>
+                    Algumas estações possuem relógios mecânicos gigantes que controlam a abertura dos portões e a chegada dos trens.
+                </li>
+
+                <li>
+                    Em algumas plataformas, a fumaça que sai dos tubos não é apenas decoração: ela ajuda a liberar a pressão das máquinas subterrâneas.
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <div class="caixa-destaque">
+                <h3>Túnel Submerso das Engrenagens</h3>
+                <p>
+                    Um dos pontos mais impressionantes do metrô é o trecho da Linha Cobre que passa por baixo da água.
+                    Esse túnel foi construído com placas de metal reforçado, grandes parafusos de pressão e bombas movidas
+                    a vapor para impedir a entrada de água.
+                </p>
+                <p>
+                    Durante a viagem, os passageiros conseguem ouvir o som das engrenagens trabalhando junto com o eco
+                    da água acima do túnel, tornando esse trecho um dos mais misteriosos e famosos do sistema.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
     </main>
 
-
-
-
-
-
-
-
+    <footer>
+        <p>Sistema metroviário criado pelo grande e renomado minerador Rauã Erick.</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
 </body>
 </html>
