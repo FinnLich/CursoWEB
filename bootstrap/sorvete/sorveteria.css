@@ -1,0 +1,52 @@
+
+.logo{
+    width: 300px;
+    height: 70px;
+}
+.Inicio{
+    color: rgb(216, 16, 186);
+}
+.banner{
+    width: 500px;
+    height: 900px;
+}
+.branco{
+    background-color: white;
+}
+.branco2{
+    background-color: white;
+    margin-top: -5%;
+    border-radius: 80px;
+}
+.sabor{
+    margin-top: 1%;
+    margin-left: 1%;
+    color: brown;
+}
+.branco3{
+    background-color: white;
+}
+.morango{
+    border-radius: 10%;
+    margin-top: 5%;
+}
+.botao{
+    background-color: #ff66b3;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+}
+.rosa{
+    color: #ff66b3;
+}
+.sorvete2{
+    width: 300px;
+}
+.sorvete1{
+    width: 230px;
+}
+.fim{
+    background-color: #ff66b3;
+    color: white;
+}
