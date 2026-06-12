@@ -1,0 +1,79 @@
+.fundob {
+background: linear-gradient(135deg, #009c3b, #ffdf00, #002776);
+}
+
+.fundoa {
+    background: linear-gradient(135deg, #74ACDF, #FFFFFF, #F6B40E, #74ACDF);
+}
+
+.fundop {
+    background: linear-gradient(
+        135deg,
+        #006600 0%,
+        #006600 40%,
+        #FFD700 50%,
+        #CC0000 60%,
+        #CC0000 100%
+    );
+}
+
+.fundoe {
+    background: linear-gradient(135deg,
+        #000000 0%,
+        #DD0000 50%,
+        #FFCE00 100%
+    );
+}
+
+.fundof {
+    background: linear-gradient(135deg,
+        #0055A4 0%,
+        #FFFFFF 50%,
+        #EF4135 100%
+    );
+}
+
+.jogador-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.jogador-card:hover {
+    transform: translateY(-5px);
+}
+
+.jogador-card img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.posicao {
+    background: #0039a6;
+    color: #00ff4c;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 6px;
+}
+
+.card-title {
+    min-height: 55px;
+}
+
+.btn-success {
+    border-radius: 8px;
+}
+
+.jogador-card {
+    border: 2px solid #eee;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.jogador-card:hover {
+    border-color: #198754;
+    box-shadow: 0 8px 20px rgba(25, 135, 84, 0.25);
+    transform: translateY(-8px);
+}
