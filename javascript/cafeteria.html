@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="cafeteira.css">
+    <title>Suco do Pó</title>
+</head>
+<body>
+
+<h1 class="container mt-3 text-center">Cafeteria Suco do Pó</h1>
+    
+<div class="container mt-5">
+        
+    <div class="row g-3 justify-content-center">
+
+        <div class="col-6 col-md-4 text-center">
+            <img src="https://media.istockphoto.com/id/505168330/pt/foto/copo-de-caf%C3%A9-latte-cafecom-gr%C3%A3os-de-caf%C3%A9-e-paus-de-canela.jpg?s=612x612&w=0&k=20&c=SO8LoLtoftBKPG9ruXpmtJAw0ZCINWvaLIn83TRmy88="
+                 class="img-fluid rounded cafeina imagem-cafe" alt="">
+                 <h2>Cappuccino</h2>
+            <button onclick="pedido()" class="btn btn-secondary mt-2 botao-cafe">
+                Pedir
+            </button>
+        </div>
+
+        <div class="col-6 col-md-4 text-center">
+            <img src="https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2024/06/cafe-expresso-ou-espresso.jpg?crop=1&resize=1212,909"
+                 class="img-fluid rounded cafeina imagem-cafe" alt="">
+                 <h2>Expresso</h2>
+            <button onclick="pedido()" class="btn btn-secondary mt-2 botao-cafe">
+                Pedir
+            </button>
+        </div>
+
+        <div class="col-6 col-md-4 text-center">
+            <img src="https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Mocha-1fc71f7.png?quality=90&resize=708,643"
+                 class="img-fluid rounded cafeina imagem-cafe" alt="">
+                 <h2>Mocha</h2>
+            <button onclick="pedido()" class="btn btn-secondary mt-2 botao-cafe">
+                Pedir
+            </button>
+        </div>
+
+    </div>
+</div>
+
+
+<hr class="separador">
+
+
+<!-- Parte 2 -->
+
+<div class="container mt-5">
+    <div class="row g-3 justify-content-center">
+
+        <div class="col-6 col-md-4 text-center">
+            <img src="https://excelso77.com/wp-content/uploads/2024/05/por-que-el-cafe-americano-se-llama-asi-te-lo-contamos.webp"
+                 class="img-fluid rounded cafeina imagem-cafe" alt="">
+                 <h2>Café Americano</h2>
+            <button onclick="pedido()" class="btn btn-secondary mt-2 botao-cafe">
+                Pedir
+            </button>
+        </div>
+
+        <div class="col-6 col-md-4 text-center">
+            <img src="https://www.brighteyedbaker.com/wp-content/uploads/2024/07/Dulce-de-Leche-Latte-Recipe.jpg"
+                 class="img-fluid rounded cafeina imagem-cafe" alt="">
+                 <h2>Latte</h2>
+            <button onclick="pedido()" class="btn btn-secondary mt-2 botao-cafe">
+                Pedir
+            </button>
+        </div>
+
+        <div class="col-6 col-md-4 text-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakvtyPMu4rtkuesQiotvvYpKiZCaMTeOkbaAxk5dllC2hct9S3A4jSVRi&s=10"
+                 class="img-fluid rounded cafeina imagem-cafe" alt="">
+                 <h2>Chocolate quente</h2>
+            <button onclick="pedido()" class="btn btn-secondary mt-2 botao-cafe">
+                Pedir
+            </button>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<script>
+    function pedido(){
+        let nome = prompt("Qual é o seu nome?");
+        let tamanho = prompt("Tamanho do pedido P, M ou G?");
+        let acompanhamento = prompt("Qual seria seu acompanhamento? Biscoito ou Bolacha?")
+        alert(" Olá, " + nome + ".\n Tamanho do seu pedido: " + tamanho + "\n Acompanhamento do seu pedido: " + acompanhamento + "\n Seu pedido foi registrado com sucesso e ficará pronto em breve."
+        )
+    }
+</script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
