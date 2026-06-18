@@ -1,0 +1,160 @@
+.separador{
+    border: 0;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    margin: 40px auto;
+}
+
+header img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.topo{
+    background: radial-gradient(circle, #ffd700, #ff8c00, #ff0000);
+    max-width: 100%;
+    margin: 0;
+    border: solid 5px black;
+}
+
+body{
+    background: linear-gradient(135deg, #ffde59, #ff914d, #ff3131);
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.card-salgado{
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background-color: #ffb3b3;
+    color: #333;
+}
+
+.card-salgado:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.card-salgado img{
+    height: 220px;
+    object-fit: contain;
+    padding: 15px;
+}
+
+.card-salgadop2{
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background-color: #ffe8a3;
+    color: #333;
+}
+
+.card-salgadop2:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.card-salgadop2 img{
+    height: 220px;
+    object-fit: contain;
+    padding: 15px;
+}
+
+.card-salgadop3{
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background-color: #b8ecf7;
+    color: #333;
+}
+
+.card-salgadop3:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.card-salgadop3 img{
+    height: 220px;
+    object-fit: contain;
+    padding: 15px;
+}
+
+.card-salgadop4{
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background-color: #b1b4b8; 
+    color: #333;
+}
+
+.card-salgadop4:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.card-salgadop4 img{
+    height: 220px;
+    object-fit: contain;
+    padding: 15px;
+}
+
+.card-body{
+    color: #333;
+}
+
+.card-body h3{
+    font-weight: bold;
+}
+
+.card-body h4{
+    color: #ff3131;
+    margin: 15px 0;
+}
+
+.btn{
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.vermelho {
+    background-color: #dc3545; 
+    color: white;              
+    padding: 5px 10px;
+    border-radius: 5px;        
+}
+
+.amarelo {
+    background-color: #ffc107; 
+    color: white;              
+    padding: 5px 10px;
+    border-radius: 5px;        
+}
+
+.azul {
+    background-color: #0dcaf0; 
+    color: white;              
+    padding: 5px 10px;
+    border-radius: 5px;        
+}
+
+.luz {
+    background-color: #f8f9fa; 
+    color: white;              
+    padding: 5px 10px;
+    border-radius: 5px;        
+}
