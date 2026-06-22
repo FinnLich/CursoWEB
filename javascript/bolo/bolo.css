@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #fff9f8;
+    font-family: "Poppins", Arial, sans-serif;
+    color: #2e2e2e;
+    padding: 4px;
+}
+
+.pagina {
+    width: 100%;
+    max-width: 1100px;
+    min-height: calc(100vh - 8px);
+    margin: auto;
+    padding: 32px 48px 22px;
+    background-color: #fffafa;
+    border: 2px solid #c72d61;
+}
+
+.cabecalho {
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.logo-bolo {
+    width: 118px;
+    height: 95px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 4px;
+}
+
+.cabecalho h1 {
+    font-size: 29px;
+    font-weight: 700;
+    color: #c4265a;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.slogan {
+    display: inline-block;
+    background-color: #b50d4a;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+
+.lista-bolos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+}
+
+.card-bolo {
+    min-height: 305px;
+    padding: 20px 14px 16px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #f4b9c9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-bolo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(173, 30, 84, 0.13);
+}
+
+.imagem-bolo {
+    width: 100%;
+    height: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.imagem-bolo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-bolo h2 {
+    color: #252525;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.card-bolo p {
+    max-width: 230px;
+    min-height: 32px;
+    color: #555555;
+    font-size: 10px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.botao-pedir {
+    margin-top: auto;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ff8baa;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 3px;
+    transition: 0.25s ease;
+}
+
+.botao-pedir:hover {
+    background-color: #d92565;
+    transform: scale(1.06);
+}
+
+
+.rodape {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.rodape p {
+    color: #c4265a;
+    font-family: "Pacifico", cursive;
+    font-size: 15px;
+}
+
+
+.botao-pedir {
+    border: none;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 850px) {
+    .pagina {
+        padding: 28px 24px 20px;
+    }
+
+    .lista-bolos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (max-width: 520px) {
+    body {
+        padding: 0;
+    }
+
+    .pagina {
+        border-width: 1px;
+        padding: 26px 15px 18px;
+    }
+
+    .cabecalho h1 {
+        font-size: 26px;
+    }
+
+    .slogan {
+        font-size: 8px;
+    }
+
+    .lista-bolos {
+        grid-template-columns: 1fr;
+    }
+
+    .card-bolo {
+        min-height: 285px;
+    }
+
+    .rodape p {
+        font-size: 13px;
+    }
+}

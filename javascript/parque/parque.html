@@ -1,0 +1,158 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parque Aquático dos Sonhos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="parque.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <section class="hero">
+      <img src="img/banner.png" alt="Banner do Parque Aquático" class="hero-banner">
+
+      <div class="hero-content">
+        <h1>O MELHOR <span>PARQUE AQUÁTICO</span></h1>
+        <p>Diversão refrescante para toda a família!</p>
+      </div>
+    </section>
+
+    <section class="faixa-preco">
+      <p>INGRESSOS A PARTIR DE <span>R$ 25,00</span></p>
+    </section>
+
+    <section class="cards">
+
+      <article class="card azul">
+        <img src="img/toboagua.png" alt="Toboágua Radical">
+
+        <div class="card-body">
+          <h2>★ Toboágua Radical ★</h2>
+          <p>Descidas emocionantes, curvas incríveis e muita adrenalina para quem ama aventura.</p>
+          <h3>R$ 25,00 cada</h3>
+
+          <button class="btn" onclick="comprarIngresso('Toboágua Radical', 25)">
+            COMPRAR INGRESSO
+          </button>
+        </div>
+      </article>
+
+      <article class="card amarelo">
+        <img src="img/piscina.png" alt="Piscina de Ondas">
+
+        <div class="card-body">
+          <h2>★ Piscina de Ondas ★</h2>
+          <p>Curta uma praia artificial com ondas divertidas e ambiente perfeito para relaxar.</p>
+          <h3>R$ 30,00 cada</h3>
+
+          <button class="btn" onclick="comprarIngresso('Piscina de Ondas', 30)">
+            COMPRAR INGRESSO
+          </button>
+        </div>
+      </article>
+
+      <article class="card verde">
+        <img src="img/rio.png" alt="Rio Lento">
+
+        <div class="card-body">
+          <h2>★ Rio Lento ★</h2>
+          <p>Relaxe boiando pelas águas calmas e aproveite um passeio tranquilo em família.</p>
+          <h3>R$ 20,00 cada</h3>
+
+          <button class="btn" onclick="comprarIngresso('Rio Lento', 20)">
+            COMPRAR INGRESSO
+          </button>
+        </div>
+      </article>
+
+      <article class="card roxo">
+        <img src="img/kids.png" alt="Área Kids">
+
+        <div class="card-body">
+          <h2>★ Área Kids ★</h2>
+          <p>Espaço seguro e divertido com escorregadores, chafarizes e brincadeiras aquáticas.</p>
+          <h3>R$ 18,00 cada</h3>
+
+          <button class="btn" onclick="comprarIngresso('Área Kids', 18)">
+            COMPRAR INGRESSO
+          </button>
+        </div>
+      </article>
+
+      <article class="card laranja">
+        <img src="img/boia.png" alt="Boia Cross">
+
+        <div class="card-body">
+          <h2>★ Boia Cross ★</h2>
+          <p>Uma atração cheia de curvas e velocidade para curtir em boias individuais ou duplas.</p>
+          <h3>R$ 35,00 cada</h3>
+
+          <button class="btn" onclick="comprarIngresso('Boia Cross', 35)">
+            COMPRAR INGRESSO
+          </button>
+        </div>
+      </article>
+
+      <article class="card rosa">
+        <img src="img/praia.png" alt="Praia Artificial">
+
+        <div class="card-body">
+          <h2>★ Praia Artificial ★</h2>
+          <p>Areia, espreguiçadeiras e um cenário tropical para aproveitar o dia com conforto.</p>
+          <h3>R$ 28,00 cada</h3>
+
+          <button class="btn" onclick="comprarIngresso('Praia Artificial', 28)">
+            COMPRAR INGRESSO
+          </button>
+        </div>
+      </article>
+
+    </section>
+
+    <footer class="rodape">
+      <p>Escolha sua atração favorita e mergulhe na diversão!</p>
+    </footer>
+
+  </main>
+
+  <script>
+    function comprarIngresso(atracao, preco) {
+      let nome = prompt("Digite seu nome:");
+
+      if (nome === null || nome.trim() === "") {
+        alert("Compra cancelada. Digite seu nome para continuar.");
+        return;
+      }
+
+      let qtd = prompt("Quantos ingressos deseja?");
+
+      if (qtd === null || qtd.trim() === "" || isNaN(qtd) || Number(qtd) <= 0) {
+        alert("Compra cancelada. Digite uma quantidade válida de ingressos.");
+        return;
+      }
+
+      let total = preco * Number(qtd);
+
+      alert(
+        "Olá, " + nome + "!\n\n" +
+        "Você acaba de adquirir " + qtd + " ingresso(s).\n\n" +
+        "Atração: " + atracao + "\n" +
+        "Valor por ingresso: R$ " + preco.toFixed(2).replace(".", ",") + "\n" +
+        "Total: R$ " + total.toFixed(2).replace(".", ",") +
+        "\n\nBOA DIVERSÃO!"
+      );
+    }
+  </script>
+
+</body>
+</html>
+```

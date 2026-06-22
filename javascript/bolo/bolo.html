@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Casa de Bolos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="bolo.css">
+</head>
+
+<body>
+
+    <main class="pagina">
+
+        <header class="cabecalho">
+            <img src="img/logo-bolo.png" alt="Bolo decorado" class="logo-bolo">
+
+            <h1>Bolos Dona Benta</h1>
+
+            <p class="slogan">
+                Os melhores bolos para o seu café da tarde com a sua vovozinha. Feitos com carinho.
+            </p>
+        </header>
+
+        <section class="lista-bolos">
+
+            <article class="card-bolo">
+                <div class="imagem-bolo">
+                    <img src="img/bolo-chocolate.png" alt="Bolo de Chocolate">
+                </div>
+
+                <h2>Bolo de Chocolate</h2>
+                <p>Massa fofinha com cobertura de chocolate.</p>
+
+                <button class="botao-pedir" onclick="pedirBolo('Chocolate')">
+                    Eu quero!
+                </button>
+            </article>
+
+            <article class="card-bolo">
+                <div class="imagem-bolo">
+                    <img src="img/bolo-cenoura.png" alt="Bolo de Cenoura">
+                </div>
+
+                <h2>Bolo de Cenoura</h2>
+                <p>Tradicional bolo de cenoura com cobertura.</p>
+
+                <button class="botao-pedir" onclick="pedirBolo('Cenoura')">
+                    Eu quero!
+                </button>
+            </article>
+
+            <article class="card-bolo">
+                <div class="imagem-bolo">
+                    <img src="img/bolo-morango.png" alt="Bolo de Morango">
+                </div>
+
+                <h2>Bolo de Morango</h2>
+                <p>Recheado com creme e pedaços de morango.</p>
+
+                <button class="botao-pedir" onclick="pedirBolo('Morango')">
+                    Eu quero!
+                </button>
+            </article>
+
+            <article class="card-bolo">
+                <div class="imagem-bolo">
+                    <img src="img/bolo-prestigio.png" alt="Bolo Prestígio">
+                </div>
+
+                <h2>Bolo Prestígio</h2>
+                <p>Chocolate com recheio cremoso de coco.</p>
+
+                <button class="botao-pedir" onclick="pedirBolo('Prestígio')">
+                    Eu quero!
+                </button>
+            </article>
+
+            <article class="card-bolo">
+                <div class="imagem-bolo">
+                    <img src="img/bolo-limao.png" alt="Bolo de Limão">
+                </div>
+
+                <h2>Bolo de Limão</h2>
+                <p>Massa leve com cobertura cremosa de limão.</p>
+
+                <button class="botao-pedir" onclick="pedirBolo('Limão')">
+                    Eu quero!
+                </button>
+            </article>
+
+            <article class="card-bolo">
+                <div class="imagem-bolo">
+                    <img src="img/red-velvet.png" alt="Bolo Red Velvet">
+                </div>
+
+                <h2>Red Velvet</h2>
+                <p>Massa vermelha com creme especial.</p>
+
+                <button class="botao-pedir" onclick="pedirBolo('Red Velvet')">
+                    Eu quero!
+                </button>
+            </article>
+
+        </section>
+
+        <footer class="rodape">
+            <p>Escolha seus favoritos e viva momentos doces!</p>
+        </footer>
+
+    </main>
+
+    <script>
+        function pedirBolo(sabor) {
+            let nome = prompt("Digite seu nome:");
+
+            if (nome === null || nome.trim() === "") {
+                alert("Pedido cancelado. Você precisa informar seu nome.");
+                return;
+            }
+
+            let qtd = prompt("Quantas fatias deseja?");
+
+            if (qtd === null || qtd.trim() === "" || isNaN(qtd) || Number(qtd) <= 0) {
+                alert("Pedido cancelado. Digite uma quantidade válida de fatias.");
+                return;
+            }
+
+            alert(
+                "Olá, " + nome + "!\n\n" +
+                "Confira o seu pedido abaixo:\n\n" +
+                "Sabor do bolo: " + sabor + "\n" +
+                "Quantidade de fatias: " + qtd + "\n\n" +
+                "O pedido será enviado em breve!"
+            );
+        }
+    </script>
+
+</body>
+</html>
